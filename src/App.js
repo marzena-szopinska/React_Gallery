@@ -1,5 +1,5 @@
 import React from 'react';
-import galleryData from './galleryData';
+import data from './data';
 import Header from './components/Header';
 import MainComponent from './components/MainComponent';
 import Footer from './components/Footer';
@@ -9,16 +9,19 @@ class App extends React.Component {
   constructor(){
     super();
     this.state = {
-      galleryInfo: galleryData
+      galleryInfo: data
     }
   }
 
   render(){
+    const mainComponents = this.state.galleryInfo.map((info) => {
+      return <MainComponent key={info.id} info={info}/>
+    });
+
     return(
       <div className='container'>
-        <h1>React Gallery</h1>
         <Header />
-        <MainComponent />
+        {mainComponents}
         <Footer />
       </div>
     );

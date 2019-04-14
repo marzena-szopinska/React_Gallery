@@ -1,8 +1,12 @@
 import React from 'react';
 
-function MainComponent() {
+function MainComponent(props) {
   return(
-    <h1>Main Component</h1>
+    <div className='info-box'>
+      <h3>{props.info.title}</h3>
+      <img src={props.info.image} alt=''/>
+      <p>{props.info.description}</p>
+    </div>
   );
 }
 

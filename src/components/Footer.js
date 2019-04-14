@@ -2,7 +2,10 @@ import React from 'react';
 
 function Footer() {
   return(
-    <h1>Footer</h1>
+    <footer>
+      <a href='#'>Back To Top</a>
+      <p>&copy; by Marzena Szopinska, Poland</p>
+    </footer>
   );
 }
 
