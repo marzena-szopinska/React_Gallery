@@ -15,13 +15,13 @@ class App extends React.Component {
   }
 
   handlePopup(id){
-    // display modal box with that exact src file
     let src;
     // loop through data and get the src data of the image that was clicked on
     const gallerys = this.state.galleryInfo.map((item) => {
       if(item.id === id){
         src = item.image;
       }
+      return item;
     });
     // make the modal visable
     const modal = document.querySelector('.bg-modal');
@@ -40,6 +40,7 @@ class App extends React.Component {
       <div className='container'>
       <div className='bg-modal'>
         <div className='modal-content'>
+          <i class="fas fa-times"></i>
           <img className='modal-img' alt='popup window' />
         </div>
       </div>

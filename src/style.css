@@ -94,11 +94,18 @@ header, footer {
 }
 
 .modal-content {
-  width: 700px;
-  height: 500px;
-  padding: 1rem;
+  width: 60%;
+  height: auto;
+  padding: 2rem;
+  position: relative;
 }
 
+.fa-times {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 1.45rem;
+}
 
  @media (min-width: 768px){
    .container {
