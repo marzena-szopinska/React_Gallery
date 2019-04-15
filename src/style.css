@@ -39,8 +39,8 @@ ul li, h1, h3, a {
 .container {
   width: 100%;
   padding: 1rem;
+  margin: 0 auto;
 }
-
 
 footer {
   margin-top: 20px;
@@ -50,8 +50,6 @@ footer {
   padding-top: 1rem;
   padding-bottom: 1rem;
   border-bottom: 2px solid black;
-  max-width: 411px;
-  margin: 0 auto;
 }
 
 .info-box h3,.info-box img {
@@ -67,5 +65,26 @@ header, footer {
    .container {
      width: 80%;
      margin: 0 auto;
+   }
+
+   .wrapper {
+     width: 100%;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+   }
+
+   .info-box {
+     width: 45%;
+   }
+ }
+
+ @media (min-width: 1024px){
+   .container {
+     width: 70%;
+   }
+
+   .info-box {
+     width: 30.33%;
    }
  }

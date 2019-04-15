@@ -21,7 +21,9 @@ class App extends React.Component {
     return(
       <div className='container'>
         <Header />
-        {mainComponents}
+        <div className='wrapper'>
+          {mainComponents}
+        </div>
         <Footer />
       </div>
     );
