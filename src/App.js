@@ -11,12 +11,29 @@ class App extends React.Component {
     this.state = {
       galleryInfo: data
     }
+    this.handlePopup = this.handlePopup.bind(this);
+  }
 
+  handlePopup(id){
+    // display modal box with that exact src file
+    let src;
+    // loop through data and get the src data of the image that was clicked on
+    const gallerys = this.state.galleryInfo.map((item) => {
+      if(item.id === id){
+        src = item.image;
+      }
+    });
+    // make the modal visable
+    const modal = document.querySelector('.bg-modal');
+    modal.style.display = 'block';
+    // insert src path to the imh tag
+    const modalImg = document.querySelector('.modal-img');
+    modalImg.setAttribute('src', src);
   }
 
   render(){
     const mainComponents = this.state.galleryInfo.map((info) => {
-      return <MainComponent key={info.id} info={info}/>
+      return <MainComponent key={info.id} info={info} handlePopup={this.handlePopup}/>
     });
 
     return(
