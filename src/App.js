@@ -25,10 +25,14 @@ class App extends React.Component {
     });
     // make the modal visable
     const modal = document.querySelector('.bg-modal');
-    modal.style.display = 'block';
-    // insert src path to the imh tag
-    const modalImg = document.querySelector('.modal-img');
-    modalImg.setAttribute('src', src);
+    // if the screen is minimum 768px wide
+    if(window.matchMedia('(min-width: 768px)').matches){
+      // display modal box
+      modal.style.display = 'block';
+      // insert src path to the img tag
+      const modalImg = document.querySelector('.modal-img');
+      modalImg.setAttribute('src', src);
+    }
   }
 
   handlePopupClose() {
