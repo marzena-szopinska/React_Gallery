@@ -51,7 +51,8 @@ ul li, h1, h3, a {
 }
 
 footer {
-  margin-top: 20px;
+  margin-top: 40px;
+
 }
 
 .info-box {
@@ -64,20 +65,33 @@ footer {
   padding-bottom: 1rem;
 }
 
+.modal-content, header, footer {
+  background-color: #F7E0CD;
+}
+
 header, footer {
   padding: 1rem;
-  background-color: #F7E0CD;
   text-align: center;
 }
 
 /* MODAL WINDOW */
 .bg-modal {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background: rgba(0, 0, 0, .7);
   position: absolute;
   top:0;
   left: 0;
+  /* center the popup window */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  width: 600px;
+  height: 426px;
+  padding: 1rem;
 }
 
 

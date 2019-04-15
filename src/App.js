@@ -11,6 +11,7 @@ class App extends React.Component {
     this.state = {
       galleryInfo: data
     }
+
   }
 
   render(){
@@ -21,7 +22,9 @@ class App extends React.Component {
     return(
       <div className='container'>
       <div className='bg-modal'>
-
+        <div className='modal-content'>
+          <img className='modal-img' alt='popup window' />
+        </div>
       </div>
         <Header />
         <div className='wrapper'>
