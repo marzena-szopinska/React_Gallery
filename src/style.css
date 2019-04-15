@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+#root {
+  position: relative;
+}
+
 body {
   font-size: 1rem;
   color: black;
@@ -65,6 +69,18 @@ header, footer {
   background-color: #F7E0CD;
   text-align: center;
 }
+
+/* MODAL WINDOW */
+.bg-modal {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, .7);
+  position: absolute;
+  top:0;
+  left: 0;
+}
+
+
  @media (min-width: 768px){
    .container {
      width: 80%;

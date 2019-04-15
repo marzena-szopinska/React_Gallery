@@ -20,6 +20,9 @@ class App extends React.Component {
 
     return(
       <div className='container'>
+      <div className='bg-modal'>
+
+      </div>
         <Header />
         <div className='wrapper'>
           {mainComponents}
