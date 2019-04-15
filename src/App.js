@@ -31,6 +31,12 @@ class App extends React.Component {
     modalImg.setAttribute('src', src);
   }
 
+  handlePopupClose() {
+    // stop displaying the modal
+    const modal = document.querySelector('.bg-modal');
+    modal.style.display = 'none';
+  }
+
   render(){
     const mainComponents = this.state.galleryInfo.map((info) => {
       return <MainComponent key={info.id} info={info} handlePopup={this.handlePopup}/>
@@ -40,7 +46,7 @@ class App extends React.Component {
       <div className='container'>
       <div className='bg-modal'>
         <div className='modal-content'>
-          <i class="fas fa-times"></i>
+          <i class="fas fa-times" onClick={this.handlePopupClose}></i>
           <img className='modal-img' alt='popup window' />
         </div>
       </div>

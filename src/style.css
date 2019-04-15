@@ -21,7 +21,7 @@ img {
   width: 100%;
 }
 
-img:hover {
+img:hover, .fa-times:hover {
   cursor: pointer;
 }
 
@@ -94,10 +94,11 @@ header, footer {
 }
 
 .modal-content {
-  width: 60%;
+  width: 50%;
   height: auto;
   padding: 2rem;
   position: relative;
+  box-shadow: 10px 6px 50px black;
 }
 
 .fa-times {
