@@ -35,6 +35,24 @@ const data = [
     image: 'https://www.capenature.co.za/wp-content/uploads/2014/07/Robberg-Nature-Reserve-copyright-Scott-N-Ramsay-12-640x426.jpg',
     description:'Ioluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.'
   },
+  {
+    id: 7,
+    title: 'Qccusantium',
+    image: 'https://love2fly.iberia.com/wp-content/uploads/2019/02/L2F-Feb-19-pic-China-Zhangje-Geopark-1-iStock-683574776-640x426.jpg',
+    description:'Ioluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.'
+  },
+  {
+    id: 8,
+    title: 'Eccusantium',
+    image: 'https://www.capenature.co.za/wp-content/uploads/2014/07/Robberg-Nature-Reserve-copyright-Scott-N-Ramsay-61-640x426.jpg',
+    description:'Ioluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.'
+  },
+  {
+    id: 9,
+    title: 'Yccusantium',
+    image: 'https://www.capenature.co.za/wp-content/uploads/2014/07/Robberg-Nature-Reserve-copyright-Scott-N-Ramsay-191-640x426.jpg',
+    description:'Ioluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.'
+  }
 ];
 
 export default data;

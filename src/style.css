@@ -21,7 +21,7 @@ img {
   width: 100%;
 }
 
-img:hover, .fa-times:hover {
+img:hover {
   cursor: pointer;
 }
 
@@ -56,7 +56,6 @@ ul li, h1, h3, a {
 
 footer {
   margin-top: 40px;
-
 }
 
 .info-box {
@@ -69,7 +68,7 @@ footer {
   padding-bottom: 1rem;
 }
 
-.modal-content, header, footer {
+header, footer {
   background-color: #F7E0CD;
 }
 
@@ -95,11 +94,12 @@ header, footer {
   height: auto;
   padding: 2rem;
   position: relative;
-  position:absolute;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   box-shadow: 10px 6px 50px black;
+  background-color: #F7E0CD;
 }
 
 .fa-times {
@@ -107,6 +107,10 @@ header, footer {
   top: 5px;
   right: 10px;
   font-size: 1.45rem;
+}
+
+.fa-times:hover {
+  cursor: pointer;
 }
 
  @media (min-width: 768px){

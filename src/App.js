@@ -1,9 +1,9 @@
 import React from 'react';
 import data from './data';
 import Header from './components/Header';
+import Modal from './components/Modal';
 import MainComponent from './components/MainComponent';
 import Footer from './components/Footer';
-
 
 class App extends React.Component {
   constructor(){
@@ -44,12 +44,7 @@ class App extends React.Component {
 
     return(
       <div className='container'>
-      <div className='bg-modal'>
-        <div className='modal-content'>
-          <i class="fas fa-times" onClick={this.handlePopupClose}></i>
-          <img className='modal-img' alt='popup window' />
-        </div>
-      </div>
+        <Modal handlePopupClose={this.handlePopupClose}/>
         <Header />
         <div className='wrapper'>
           {mainComponents}
